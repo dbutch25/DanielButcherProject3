@@ -12,7 +12,9 @@ function App () {
   return (
     <>
       <Header />
-      <Login />
+      <main>
+        <Login />
+      </main>
       <Footer />
     </>
   );

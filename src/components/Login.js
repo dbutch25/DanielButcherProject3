@@ -10,17 +10,31 @@ const Login = () => {
    } 
 
     return (
-        <div> 
-            <button onClick={handleClick}>
-                {
-                    loggedIn
-                        ? 'Logout'
-                        : 'Login'
-                }
-            </button>
-            {
-                loggedIn ? <BookPage /> : null
-            }
+        <div className="wrapper">
+            <div className="allForm">
+                <form action="" method="Post" className="loginForm" >
+                    <fieldset>
+                    <div className="loginForm">
+                        <label htmlFor="username">Username</label>
+                        <input type="text" name="username" id="username" />
+                    </div>
+                    <div className="loginForm">
+                        <label htmlFor="email">Password</label>
+                        <input type="password" name="password" id="password" />
+                    </div>
+                    </fieldset>
+                </form>
+                        <button className="logButton" onClick={handleClick}>
+                            {
+                                loggedIn
+                                    ? 'Logout'
+                                    : 'Login'
+                            }
+                        </button>
+                        {
+                            loggedIn ? <BookPage /> : null
+                        }
+            </div>
         </div>
     )
 }

@@ -14,8 +14,7 @@ const BookPage = () => {
 
     return(
         <>
-            <section className="bSection">
-                <div className="wrapper">
+            <section className="bSection wrapper">
                     <h2>Game Of Thrones Books</h2>
                     <p>Books to checkout if you don't want to be disappointed from watching the TV-show</p>
                     <div>
@@ -23,7 +22,6 @@ const BookPage = () => {
                             Books To Read
                         </button>
                     </div>
-                </div>
 
                 <div className="books">
                     {books && books.map((book, index) => {
